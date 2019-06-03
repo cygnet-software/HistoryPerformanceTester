@@ -1,0 +1,28 @@
+﻿<Window x:Class="HistoryPerformanceTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HistoryPerformanceTester"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ListView Grid.Row="0" x:Name="ResultsList" />
+
+        <StackPanel Grid.Row="1">
+            <Button Content="Get History - NET - Synchronous" Click="Button_Click" />
+            <Button Content="Get History - NET - Asynchronous" Click="Button_Click_1" />
+            <Button Content="Get History - NET - Parallel" Click="Button_Click_1" />
+            <Button Content="Get History - COM - Synchronous" Click="Button_Click_2" />
+            <Button Content="Get History - COM - Asynchronous" Click="Button_Click_3" />
+            <Button Content="Get History - ODBC - Synchronous" Click="Button_Click_4" />
+            <Button Content="Get History - ODBC - Asynchronous" Click="Button_Click_5" />
+        </StackPanel>
+    </Grid>
+   
+</Window>
